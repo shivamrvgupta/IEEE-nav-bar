@@ -18,24 +18,29 @@ background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(
 background-position: center;
 background-size: cover;
 height: 100vh;
-overflow-x: hidden;
+overflow-x: auto;
 
 }
 
 nav{
     background-color: black;
     width: 100%;
+    
+    background: rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 img.logo{
     height: 80px;
     margin-left: 30px;
     margin-top: 15px;
+    
 }
 
 nav ul{
     float: right;
     margin-right: 30px;
+    
 }
 
 nav ul li{
@@ -54,12 +59,13 @@ a.active,a:hover{
 }
 .checkbtn{
     font-size: 30px;
-    color: black;
+    color: white;
     float: right;
     line-height: 80px;
     margin-right: 30px;
     cursor: pointer;
     display: none;
+    
 }
 
 #check{
@@ -68,14 +74,20 @@ a.active,a:hover{
 
 @media (max-width: 952px) {
     
+     label.logo{
+     font-size: 30px;
+     padding-left: 50px;
+     }
+
     nav ul li a{
         font-size: 16px;
     }
 }
 @media (max-width: 858px){
     .checkbtn{
-        color: black;
+        color: white;
         display: block;
+        
     }
 
     ul{
@@ -85,6 +97,7 @@ a.active,a:hover{
         top: 80px;
         left: 0;    
         text-align: center;
+        background-color: black;
     }
     nav ul li{
         display: block;
@@ -94,18 +107,21 @@ a.active,a:hover{
         font-size: 20px;
     }
     a:hover,a.active{
-        background: none;
+        
         color: #0082e6;
     }
     #check:checked ~ ul{
         left: 0;
     }
+
+    
 }
 
 .techo{
 margin-top: 20px;
 margin-left: 180px;
-width: 650px;
+width: 700px;
+height: 180px;
 
 }
 
